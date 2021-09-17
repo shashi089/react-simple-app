@@ -1,0 +1,70 @@
+h2 {
+  text-align: center;
+}
+.form-container {
+  display: flex;
+  justify-content: center;
+  height: 350px;
+}
+.form-data {
+  padding-top: 10px;
+  width: 300px;
+  background: #f0ecec;
+  border-radius: 10px;
+}
+label {
+  margin-left: 10px;
+}
+.form-data input {
+  height: 30px;
+}
+
+.form-data input,
+.form-data textarea {
+  width: 90%;
+  border: none;
+  border-radius: 5px;
+  margin-left: 10px;
+}
+.form-data textarea {
+  height: 100px;
+}
+.form-data button {
+  margin-left: 80px;
+  width: 150px;
+  height: 30px;
+  background: #78b0e6;
+  border: none;
+  border-radius: 10px;
+}
+.allposts h1 {
+  text-align: center;
+}
+.allposts {
+  width: 95%;
+}
+.allposts table {
+  margin: 1rem;
+  border-collapse: collapse;
+  width: 100%;
+}
+.allposts table th {
+  padding: 1rem;
+  background: #78b0e6;
+  border-radius: 10px;
+}
+
+.allposts table td {
+  height: 80px;
+}
+.allposts table tr:nth-child(even) {
+  background: #f2f2f2;
+}
+.allposts button {
+  height: 30px;
+  margin: 2px 0 2px 80px;
+  width: 100px;
+}
+.userId {
+  text-align: center;
+}

@@ -1,0 +1,13 @@
+.title {
+  text-align: center;
+  padding: 1rem;
+  font-size: 5rem;
+  font-weight: 700;
+}
+.sub-title {
+  text-align: center;
+}
+.tech-container {
+  display: flex;
+  justify-content: center;
+}

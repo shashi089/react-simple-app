@@ -1,5 +1,12 @@
 .nav {
+  padding: 2rem 0;
   font-size: 1.5rem;
   display: flex;
   justify-content: center;
+  gap: 1rem;
+  background: linear-gradient(to right, #3a60b3, #233b6f);
+}
+.linkname {
+  text-decoration: none;
+  color: #fff;
 }

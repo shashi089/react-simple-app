@@ -61,22 +61,22 @@ function Post({ match }) {
           <p>{post.body}</p>
         </div>
         <div className="comments">
-          <h1 className="text-center">Comments</h1>
+          <h1 className="sub-title">Comments</h1>
           <div className="list-group">
             {comment.map((data) => {
               return (
                 <div key={data.id} className="list-group-item">
                   <p>
                     <b>Name:</b>
-                    <span className="ml-3">{data.name}</span>
+                    <span className="">{data.name}</span>
                   </p>
                   <p>
                     <b>Email:</b>
-                    <span className="ml-3">{data.email}</span>
+                    <span className="">{data.email}</span>
                   </p>
                   <p>
                     <b>Comment:</b>
-                    <span className="ml-3">{data.body}</span>
+                    <span className="">{data.body}</span>
                   </p>
                 </div>
               );

@@ -9,9 +9,15 @@ function App() {
   return (
     <BrowserRouter>
       <div className="nav">
-        <NavLink to="/">Home</NavLink>
-        <NavLink to="/about">About</NavLink>
-        <NavLink to="/posts">Posts</NavLink>
+        <NavLink className="linkname" to="/">
+          Home
+        </NavLink>
+        <NavLink className="linkname" to="/posts">
+          Posts
+        </NavLink>
+        <NavLink className="linkname" to="/about">
+          About
+        </NavLink>
       </div>
       <Switch>
         <Route path="/" exact component={Home} />

@@ -8,7 +8,7 @@ class Home extends Component {
         <div className="title">
           <p>CRUD Operation</p>
         </div>
-        <h2 className="sub-title">Technologies Used</h2>
+        <h2 className="sub-title">Web Technologies</h2>
         <div className="tech-container">
           <div>
             <div>HTML</div>

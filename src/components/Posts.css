@@ -32,10 +32,11 @@ label {
 .form-data button {
   margin-left: 80px;
   width: 150px;
-  height: 30px;
+  height: 40px;
   background: #78b0e6;
   border: none;
   border-radius: 10px;
+  cursor: pointer;
 }
 .allposts h1 {
   text-align: center;
@@ -64,7 +65,26 @@ label {
   height: 30px;
   margin: 2px 0 2px 80px;
   width: 100px;
+  border-radius: 15px;
+  border: none;
+  color: #fff;
+  font-weight: 500;
+  cursor: pointer;
 }
 .userId {
   text-align: center;
+}
+
+.post-details {
+  text-decoration: none;
+  color: #fff;
+}
+.update {
+  background: #06ad68;
+}
+.delete {
+  background: #f01326;
+}
+.post {
+  background: #275e74;
 }

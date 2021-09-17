@@ -142,15 +142,26 @@ class Posts extends Component {
                     <td>{post.title}</td>
                     <td>{post.body}</td>
                     <td>
-                      <button onClick={() => this.selectPostToUpdate(post)}>
+                      <button
+                        className="update"
+                        onClick={() => this.selectPostToUpdate(post)}
+                      >
                         Update
                       </button>
 
-                      <button onClick={() => this.deletePost(post.id)}>
+                      <button
+                        className="delete"
+                        onClick={() => this.deletePost(post.id)}
+                      >
                         Delete
                       </button>
-                      <button>
-                        <Link to={`/posts/${post.userId}`}>Post details</Link>
+                      <button className="post">
+                        <Link
+                          className="post-details"
+                          to={`/posts/${post.userId}`}
+                        >
+                          Post details
+                        </Link>
                       </button>
                     </td>
                   </tr>

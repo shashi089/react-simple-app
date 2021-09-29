@@ -8,6 +8,7 @@ function Post({ match }) {
   const [post, setPost] = useState({});
   const [comment, setComment] = useState([]);
 
+  // function to get the data from API
   let fetchdata = async () => {
     try {
       const { data: postdata } = await axios.get(
@@ -33,6 +34,7 @@ function Post({ match }) {
   }, []);
   return (
     <div className="container">
+      {/* User details container */}
       <div className="user-profile">
         <h2>User Details</h2>
         <div className="userdata">
@@ -52,12 +54,14 @@ function Post({ match }) {
           {user.website}
         </div>
       </div>
+      {/* title and body(user-details) container */}
       <div className="content container">
         <h1>{post.title}</h1>
         <p>{post.body}</p>
       </div>
       <div className="comments">
         <h1 className="sub-title">Comments</h1>
+        {/* Comments container */}
         <div className="list-group">
           {comment.map((data) => {
             return (

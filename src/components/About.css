@@ -1,7 +1,17 @@
 .about {
   height: 60vh;
+  text-align: center;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
+}
+.about h1 {
+  color: #21637e;
+  text-shadow: 3px 3px 6px #3b8fb1;
+}
+@media screen and (max-width: 767px) {
+  .about {
+    font-size: 0.85rem;
+  }
 }

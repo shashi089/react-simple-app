@@ -11,6 +11,11 @@ class About extends Component {
             I like dabbling in various parts of frontend development and like to
             learn about new technologies
           </h3>
+          <h3>
+            <a href="https://www.linkedin.com/in/shashidhar-naik-aab5b512a/">
+              https://www.linkedin.com/in/shashidhar-naik-aab5b512a/
+            </a>
+          </h3>
         </div>
       </div>
     );

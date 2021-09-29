@@ -6,21 +6,27 @@ class Home extends Component {
     return (
       <div className="container">
         <div className="title">
+          {/* Title */}
           <p>CRUD Operation</p>
         </div>
-        <h2 className="sub-title">Web Technologies</h2>
+        <p className="sub-title">Web Technologies</p>
         <div className="tech-container">
           <div>
-            <div>HTML</div>
-            <div>CSS</div>
-            <div>
-              React JS
+            <h5>
+              <i class="fab fa-html5 fa-2x"> HTML</i>
+            </h5>
+            <h5>
+              <i class="fab fa-css3-alt fa-2x"> CSS</i>
+            </h5>
+            <h5>
+              <i class="fab fa-react fa-2x"> React JS</i>
+
               <ul>
                 <li>React Router Dom</li>
                 <li>Axios</li>
                 <li>React Hooks</li>
               </ul>
-            </div>
+            </h5>
           </div>
         </div>
       </div>

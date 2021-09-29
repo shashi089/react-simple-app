@@ -4,9 +4,10 @@
   display: flex;
   justify-content: center;
   gap: 1rem;
-  background: linear-gradient(to right, #3a60b3, #233b6f);
+  background-image: linear-gradient(to right bottom, #1a4ab0, #22458c, #2c3e67);
 }
 .linkname {
   text-decoration: none;
+  text-shadow: 3px 3px 9px #d5d5d5;
   color: #fff;
 }

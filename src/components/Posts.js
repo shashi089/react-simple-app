@@ -15,6 +15,8 @@ class Posts extends Component {
       id: "",
     };
   }
+
+  // function to create post
   createPost = async () => {
     try {
       const { userId, title, body } = this.state;
@@ -31,6 +33,7 @@ class Posts extends Component {
       console.log("Error creating data from server");
     }
   };
+  // function to get post data
   getPosts = async () => {
     try {
       const { data } = await axios.get(API_URL);
@@ -39,12 +42,16 @@ class Posts extends Component {
       console.error("Error Fetching data from server", err);
     }
   };
+
+  // function to delete post
   deletePost = async (postId) => {
     await axios.delete(`${API_URL}/${postId}`);
     let posts = [...this.state.posts];
     posts = posts.filter((post) => post.id !== postId);
     this.setState({ posts });
   };
+
+  // function to Update post
   updatePost = async () => {
     try {
       const { id, userId, title, body } = this.state;
@@ -64,6 +71,8 @@ class Posts extends Component {
   handleChange = ({ target: { name, value } }) => {
     this.setState({ [name]: value });
   };
+
+  // function to Submit post
   handleSubmit = (e) => {
     e.preventDefault();
     if (this.state.id) {
@@ -86,9 +95,11 @@ class Posts extends Component {
           <div className="form-title">
             <h2>Create or Update Post</h2>
           </div>
+          {/* form to create or update post */}
           <div className="form-container">
             <form onSubmit={this.handleSubmit} className="form-data">
               <div>
+                {/* UserID */}
                 <label htmlFor="">User Id : </label>
                 <br />
                 <input
@@ -99,6 +110,7 @@ class Posts extends Component {
                 />
               </div>
               <br />
+              {/* Title */}
               <div>
                 <label htmlFor="">Title: </label>
                 <br />
@@ -110,6 +122,7 @@ class Posts extends Component {
                 />
               </div>
               <br />
+              {/* Body */}
               <div>
                 <label htmlFor="">Body: </label>
                 <br />
@@ -121,6 +134,7 @@ class Posts extends Component {
                 />
               </div>
               <br />
+              {/* Submit button */}
               <div>
                 <button type="submit">Submit</button>
               </div>
@@ -128,7 +142,10 @@ class Posts extends Component {
           </div>
           <div className="allposts">
             <h1>All Posts</h1>
+
+            {/* Table to display all posts */}
             <table>
+              {/* Table header */}
               <tr>
                 <th>UserID</th>
                 <th>Title</th>
@@ -138,10 +155,12 @@ class Posts extends Component {
               {this.state.posts.map((post) => {
                 return (
                   <tr key={post.id}>
+                    {/* Table data */}
                     <td className="userId">{post.userId}</td>
                     <td>{post.title}</td>
                     <td>{post.body}</td>
                     <td>
+                      {/* Action-buttons */}
                       <button
                         className="update"
                         onClick={() => this.selectPostToUpdate(post)}
